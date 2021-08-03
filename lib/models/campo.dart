@@ -1,5 +1,4 @@
 import 'package:campo_minado/models/explosao_exception.dart';
-import 'package:flutter/animation.dart';
 
 class Campo {
   // Valores constantes do campo
@@ -43,7 +42,7 @@ class Campo {
     if (_minado) {
       _explodido = true;
       // Vamos lançar uma exceção
-      throw explosaoException();
+      throw ExplosaoException();
     }
     // Vamos usar recursividade - o método abrir() vai chamar novamente abrir()
     // O objetivo é abrir os vizinhos que não tenham bomba

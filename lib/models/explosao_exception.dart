@@ -1,1 +1,1 @@
-class explosaoException implements Exception {}
+class ExplosaoException implements Exception {}
