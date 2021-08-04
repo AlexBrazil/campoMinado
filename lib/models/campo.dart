@@ -104,7 +104,7 @@ class Campo {
   }
 
   //Retorna o número de minas na vizinhança
-  int get dtdeMinasNaVizinhanca {
+  int get qtdeMinasNaVizinhanca {
     return vizinhos.where((elementVizinho) => elementVizinho.minado).length;
   }
 }
