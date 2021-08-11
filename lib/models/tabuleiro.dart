@@ -17,14 +17,14 @@ class Tabuleiro {
     _sortearMinas();
   }
 
-  void _reiniciar() {
+  void reiniciar() {
     _campos.forEach((campo) {
       campo.reiniciar();
-      _sortearMinas();
     });
+    _sortearMinas();
   }
 
-  void _revelarBombas() {
+  void revelarBombas() {
     _campos.forEach((campo) {
       campo.revelarBombar();
     });
