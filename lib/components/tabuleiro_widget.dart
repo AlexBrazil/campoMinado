@@ -4,7 +4,7 @@ import 'package:campo_minado/models/tabuleiro.dart';
 import 'package:flutter/material.dart';
 
 class TabuleiroWidget extends StatelessWidget {
-  final Tabuleiro tabuleiro;
+  final Tabuleiro? tabuleiro;
   final void Function(Campo) onAbrir;
   final void Function(Campo) alternarMarcacao;
 
@@ -19,8 +19,8 @@ class TabuleiroWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: GridView.count(
-        crossAxisCount: tabuleiro.colunas,
-        children: tabuleiro.campos.map((itemCampo) {
+        crossAxisCount: tabuleiro!.colunas,
+        children: tabuleiro!.campos.map((itemCampo) {
           return CampoWidget(
               campo: itemCampo,
               onAbrir: onAbrir,
